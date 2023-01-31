@@ -1,6 +1,5 @@
 const controle = document.querySelectorAll("[data-controle]")
 const estatisticas = document.querySelectorAll("[data-estatistica]")
-
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -64,4 +63,26 @@ function manipulaDados (operacao, controle, peca){
     }
 }
 
+const robos = document.querySelectorAll('[data-robo]')
+const botaoModelo = document.querySelector('[data-botao]')
+let i = 1
+console.log(robos)
 
+ botaoModelo.addEventListener("click", () => {
+    escondeRobo();
+    mostraRobo();
+ })
+
+function escondeRobo (){
+    robos.forEach( (elemento) => {
+        elemento.classList.add('hide');
+    })
+}
+function mostraRobo (){
+    robos[i].classList.remove('hide')
+    i++
+    if (i == robos.length){
+        i = 0
+    }
+
+}
