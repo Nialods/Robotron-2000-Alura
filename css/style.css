@@ -33,12 +33,12 @@ main {
     background: url(../img/estrutura.png) no-repeat;
     background-position: center center;
     margin: 0;
-    flex-basis: 40%;
+    flex-basis: 35%;
     position: relative;
 }
 
 .robo {
-    height: 110%;
+    height: 90%;
     z-index: 1;
     position: absolute;
     left: -20%;
@@ -149,7 +149,6 @@ main {
 }
 
 
-
 /****************************** Estatísticas *****/
 .estatisticas {
     flex-basis: 23%;
@@ -207,6 +206,18 @@ main {
     order: 1;
     flex-basis: 35%;
     margin: 10px 0 0;
+}
+
+
+#alterarModelo {
+    font-family: 'Teko', sans-serif;
+    padding: 6px 35px;
+    display: inline;
+    margin-top: 0.2em;
+}
+
+.hide {
+    display: none;
 }
 
 @media screen and (max-width: 1600px) {
